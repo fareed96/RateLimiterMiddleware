@@ -41,10 +41,7 @@ In the Startup.cs of your application, add the middleware to the request pipelin
 
 `public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 {
-    // Other middleware
     app.UseMiddleware<RateLimiterMiddleware>();
-
-    // Remaining configuration
 }`
 
 ### Usage
